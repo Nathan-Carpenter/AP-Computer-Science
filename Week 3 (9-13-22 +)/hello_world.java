@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
 
 public class hello_world {
     public static void main(String[] args){
@@ -10,7 +9,7 @@ public class hello_world {
         if (l == "1"){
             System.out.println("ouch");
         }
-
+        keyboard.close();
     }
     
 }

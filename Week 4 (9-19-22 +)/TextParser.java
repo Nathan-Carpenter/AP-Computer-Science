@@ -29,17 +29,17 @@ public class TextParser {
         // .substring(first,last) will return a new string that is piece of th eoriginal string starting at the first index and ending at the second index
         System.out.println("Your phrase includes the following letteres: " + phrase.substring(1,7));
 
-        int length = phrase.length();
-        int halfway = length / 2;
-        int third = length * 1/3;
-        int secondThrid = length * 2/3;
+        //int length = phrase.length();
+        //int halfway = length / 2;
+        //int third = length * 1/3;
+        //int secondThird = length * 2/3;
 
         // .indexOf() returns the first index of desired character
         System.out.println("The first 'a' is at index: " + phrase.indexOf("a") );
 
 
 
-
+        keyboard.close();
 
     }
 }

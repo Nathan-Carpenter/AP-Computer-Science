@@ -40,6 +40,7 @@ public class maths {
             else if (newGuess < guess){
                 System.out.println("Aww, your guess was too low");
             }
+            keyboard2.close();
 
        }  
         System.out.println("Congrats! you guessed the new number, " + guess + ", correctly!");
