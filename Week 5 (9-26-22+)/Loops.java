@@ -36,5 +36,40 @@ public class Loops {
             // loop body, tells the computer what to do if the test expression is met
         //}
 
+
+        // create a factorial function of a user input ex. input = 5 output = 5!
+        System.out.println(" ");
+        System.out.println("Please input a number");
+        int userNum = keyboard.nextInt();
+        int answer = 1;
+
+        while (userNum > 0){
+            answer = answer*userNum;
+            userNum -= 1;
+            
+            
+        }
+        System.out.println("The factorial of your number is: " + answer);
+
+
+        // DO WHILE LOOP 
+
+        //do
+        //{
+            //statements, tell the computer what to do;
+        //}while(test expression);
+        int b = 0;
+        do
+        {
+            b ++;
+            System.out.print(b + " ");
+
+        }while(b <= 9);
+
+        do{
+            b --;
+            System.out.print(b + "");
+        }while(b >= 2);
+
     }
 }
