@@ -9,15 +9,19 @@ public class createYourOwnAdventureGame {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("You are a gladiator. There are 3 mystery opponents you can choose between.");
-        System.out.println("Choose your opponent (a/b/c)");
+        System.out.println("Choose your opponent (1,2, or, 3)");
         System.out.println(" ");
-
-        String ans = keyboard.nextLine();
+        String ans = " ";
+        int answer = keyboard.nextInt();
+        while (answer != 1 && answer != 2 && answer != 3){
+            System.out.println("Please enter either 1, 2, or 3");
+            answer = keyboard.nextInt();
+        }
        
-        ans = checkValid(ans);
+
         // CHOICE #1:====================================================================================================================================================
         // CHOSE A; HENRY
-        if(ans.equals("a")){
+        if(answer == 1){
             System.out.println("The figher you have chosen is...");
             System.out.println("HENRY!!");
             System.out.println(" ");
@@ -88,7 +92,7 @@ public class createYourOwnAdventureGame {
                         System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
                         System.out.println("As Asher draws his weapon, you see that he wields... a huge broadsword!");
                         System.out.println(" ");
-                        System.out.println("You freeze in terror at the sight of Asher's long, thick, hard... sword");
+                        System.out.println("You freeze in terror at the sight of Asher's long, thick, sword");
                         System.out.println("Using this moment of weakness, Asher's sword CLEAVES THROUGH YOU like a sword through a nerdy highschooler");
                         System.out.println("This combat ends with your death. Asher gives you a solemn warrior's respect after your death");
                         System.out.println(" ");
@@ -137,8 +141,77 @@ public class createYourOwnAdventureGame {
                         System.out.println("Ending 3/6 - Champion");
                     }
                 }
+                else if(ans.equals("b")){
+                    System.out.println("The figher you have chosen is...");
+                    System.out.println("NATE!!");
+                    System.out.println(" ");
+                 
+        
+                    System.out.println("You can choose between 3 weapons to fight Nate:");
+                    System.out.println("Type 'a' for a plastic straw");
+                    System.out.println("Type 'b' for a powerful metal hammer");
+                    System.out.println("Type 'c' for... dylan?");
+                    System.out.println(" ");
+        
+                    ans = keyboard.nextLine();
+                    ans = checkValid(ans);
+                    // CHOICE 2.3 ====================================================================================================================================================
+                    // CHOSE A; PLASTIC STRAW
+                    if(ans.equals("a")){
+                        System.out.println("You have chosen a plastic straw as your weapon!");
+                        System.out.println(" ");
+                        System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
+                        System.out.println("As Nate draws his weapon, you see that he wields... a shortbow!");
+                        System.out.println(" ");
+                        System.out.println("As you look closer at the weapon you have chosen, the plasic straw, you see");
+                        System.out.println("That it is made out of an incredibly durable, strong and sharb material");
+                        System.out.println("Gaining confidence after seeing this, you run at Nate and manage to dodge his arrows");
+                        System.out.println("While Nate is fumbling with his quiver, you run your straw through his throat, ending his life.");
+                        System.out.println("This match ends with your victory!");
+                        System.out.println(" ");
+                        System.out.println("The audience roars in approval! You have fought 2 gladiators and won! This day marks you as the chapmion.");
+                        System.out.println("You go on to live a life of luxury, proceeding to win every battle you enter");
+                        System.out.println(" ");
+                        System.out.println("Ending 3/6 - Champion");
+                    }
+                     // CHOSE B; HAMMER
+                    else if(ans.equals("b")){
+                        System.out.println("You have chosen metal hammer as your weapon!");
+                        System.out.println(" ");
+                        System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
+                        System.out.println("As Nate draws his weapon, you see that he wields... a shortbow!");
+                        System.out.println(" ");
+                        System.out.println("As you look closer at the weapon you have chosen, the metal, you see");
+                        System.out.println("That is is made out of a flimsy plastic and rubber, painted a silver color");
+                        System.out.println("Your heart fills with dread as you notice this, and while you stand shocked Nate nocks an arrow");
+                        System.out.println("and lets it fly, piercing your heart easily. You fall to your knees and then to the ground, dying");
+                        System.out.println("This match ends with your death");
+                        System.out.println(" ");
+                        System.out.println("Despite your loss, you still recieve praise for your previous battle after your death, and recieve an honorable funeral");
+                        System.out.println(" ");
+                        System.out.println("Ending 4/6 - An Honorable Death");
 
-            }
+                    }
+                    else if(ans.equals("c")){
+                        System.out.println("You have chosen dylan as your weapon?");
+                        System.out.println(" ");
+                        System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
+                        System.out.println("As Henry draws his weapon, you see that he wields... a shortbow!");
+                        System.out.println(" ");
+                        System.out.println("You glance at the... Dylan? As you look at Dylan, his entire body starts to glow and float softly in the air");
+                        System.out.println("That beautiful light around him quickly is relpaced by a blinding, painful glow. Despite the pain, you cannot look away.");
+                        System.out.println("You can feel your eyes start to melt as you stare at Dylan's glowing form. Then suddenly, you feel a wave of energy wash over you.");
+                        System.out.println("In the very next moment, you feel your flesh getting ripped away from your body, and your bones tearing themselves apart.");
+                        System.out.println(" ");
+                        System.out.println("This marks the extinction of life on Earth, as every single living thing is obliterated by Dylan's sheer force");
+                        System.out.println("This is the end of your and everybody and everything else's story. Total anhiliation, and the slow death of a lonely world.");
+                        System.out.println(" ");
+                        System.out.println("Ending 0/6 - Behold, Dylan");
+                        
+        
+                        
+                        
+                    }
             // CHOSE C; BIG ROCK
             else if(ans.equals("c")){
                 System.out.println("You have chosen a big rock as your weapon!");
@@ -159,12 +232,12 @@ public class createYourOwnAdventureGame {
                 ans = keyboard.nextLine();
                 ans = checkValid2(ans);
                 System.out.println(" ");
-                if ans.equals("a"){
+                if( ans.equals("a")){
                     System.out.println("You have decided to continue on as a Ghost, so that you can haunt Henry until his death.");
                     System.out.println("Make sure the remainder of his life is filled with misery and torment!");
                     System.out.println("Ending 6/6 - Ghostly Revenge");
                 }
-                else if ans.equals("b"){
+                else if (ans.equals("b")){
                     System.out.println("You decide not to continue as a Ghost. Henry defeated you in fair combat, and it's only right you let him live peacefully");
                     System.out.println("A good end, you decide to fade on to wherever you will go next");
                     System.out.println("Ending 5/6 - Acceptance of Defeat");
@@ -175,7 +248,7 @@ public class createYourOwnAdventureGame {
             
         }
         // CHOSE B; ASHER
-        else if(ans.equals("b")){
+        else if(answer == 2){
             System.out.println("The figher you have chosen is...");
             System.out.println("ASHER!!");
             System.out.println(" ");
@@ -195,7 +268,7 @@ public class createYourOwnAdventureGame {
                 System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
                 System.out.println("As Asher draws his weapon, you see that he wields... a huge broadsword!");
                 System.out.println(" ");
-                System.out.println("You freeze in terror at the sight of Asher's long, thick, hard... sword");
+                System.out.println("You freeze in terror at the sight of Asher's long, thick sword");
                 System.out.println("Using this moment of weakness, Asher's sword CLEAVES THROUGH YOU like a sword through a nerdy highschooler");
                 System.out.println("This combat ends with your death. Asher gives you a solemn warrior's respect after your death");
                 System.out.println(" ");
@@ -208,12 +281,12 @@ public class createYourOwnAdventureGame {
                 ans = keyboard.nextLine();
                 ans = checkValid2(ans);
                 System.out.println(" ");
-                if ans.equals("a"){
+                if (ans.equals("a")){
                     System.out.println("You have decided to continue on as a Ghost, so that you can haunt Asher until his death.");
                     System.out.println("Make sure the remainder of his life is filled with misery and torment!");
                     System.out.println("Ending 6/6 - Ghostly Revenge");
                 }
-                else if ans.equals("b"){
+                else if (ans.equals("b")){
                     System.out.println("You decide not to continue as a Ghost. Asher defeated you in fair combat, and it's only right you let him live peacefully");
                     System.out.println("A good end, you decide to fade on to wherever you will go next");
                     System.out.println("Ending 5/6 - Acceptance of Defeat");
@@ -405,7 +478,7 @@ public class createYourOwnAdventureGame {
             }
         }
         // CHOSE C; NATE ====================================================================================================================================================
-        else if(ans.equals("c")){
+        else if(answer == 3){
             System.out.println("The figher you have chosen is...");
             System.out.println("NATE!!");
             System.out.println(" ");
@@ -531,7 +604,7 @@ public class createYourOwnAdventureGame {
                         System.out.println("As the gates of the colosseum slowly open, you come face to face with your enemy");
                         System.out.println("As Asher draws his weapon, you see that he wields... a huge broadsword!");
                         System.out.println(" ");
-                        System.out.println("You freeze in terror at the sight of Asher's long, thick, hard... sword");
+                        System.out.println("You freeze in terror at the sight of Asher's long, thick sword");
                         System.out.println("Using this moment of weakness, Asher's sword CLEAVES THROUGH YOU like a sword through a nerdy highschooler");
                         System.out.println("This combat ends with your death. Asher gives you a solemn warrior's respect after your death");
                         System.out.println(" ");
@@ -601,12 +674,12 @@ public class createYourOwnAdventureGame {
                 ans = keyboard.nextLine();
                 ans = checkValid2(ans);
                 System.out.println(" ");
-                if ans.equals("a"){
+                if (ans.equals("a")){
                     System.out.println("You have decided to continue on as a Ghost, so that you can haunt Nate until his death.");
                     System.out.println("Make sure the remainder of his life is filled with misery and torment!");
                     System.out.println("Ending 6/6 - Ghostly Revenge");
                 }
-                else if ans.equals("b"){
+                else if (ans.equals("b")){
                     System.out.println("You decide not to continue as a Ghost. Nate defeated you in fair combat, and it's only right you let him live peacefully");
                     System.out.println("A good end, you decide to fade on to wherever you will go next");
                     System.out.println("Ending 5/6 - Acceptance of Defeat");
@@ -640,6 +713,13 @@ public class createYourOwnAdventureGame {
 
 
         }
+        else{
+
+        }
+    }
+}
+        }
+    
 
 
 
