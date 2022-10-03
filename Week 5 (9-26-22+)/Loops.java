@@ -71,5 +71,6 @@ public class Loops {
             System.out.print(b + "");
         }while(b >= 2);
 
+
     }
 }
