@@ -212,6 +212,8 @@ public class createYourOwnAdventureGame {
                         
                         
                     }
+                }
+            }
             // CHOSE C; BIG ROCK
             else if(ans.equals("c")){
                 System.out.println("You have chosen a big rock as your weapon!");
@@ -649,7 +651,7 @@ public class createYourOwnAdventureGame {
                         System.out.println("You go on to live a life of luxury, proceeding to win every battle you enter");
                         System.out.println(" ");
                         System.out.println("Ending 3/6 - Champion");
-
+                    }
                 }
             }
             // CHOSE B; HAMMER
@@ -716,21 +718,23 @@ public class createYourOwnAdventureGame {
         else{
 
         }
+        keyboard.close();
     }
-}
-        }
+
+        
     
 
 
 
 
-    }
+    
     public static String checkValid(String answer){
         Scanner keyboard = new Scanner(System.in);
         while (!answer.equals("a") && !answer.equals("b") && !answer.equals("c")){
             System.out.println("Please enter either a, b, or c");
             answer = keyboard.nextLine();
         }
+        keyboard.close();
         return answer;
         
     }
@@ -740,6 +744,7 @@ public class createYourOwnAdventureGame {
             System.out.println("Please enter either a, b, or c");
             answer = keyboard.nextLine();
         } 
+        keyboard.close();
         return answer;
        
     }
