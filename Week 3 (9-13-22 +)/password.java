@@ -10,17 +10,17 @@ public class password{
         String pass = "0";
         Scanner keyboard2 = new Scanner(System.in);
 
-        while (!pass.equals("youre mother")){
+        while (!pass.equals("778")){
             System.out.println("Please enter a password");
             keyboard2 = new Scanner(System.in);
             pass = keyboard2.nextLine();
             
-            if (!pass.equals("youre mother")){
+            if (!pass.equals("778")){
                 System.out.println("INCORRECT");
                 System.out.println("Please try again");
             }           
         }
-        if (pass.equals("youre mother")){
+        if (pass.equals("778")){
             System.out.println("Correct");
             System.out.println("You entered the intended password");
         }
