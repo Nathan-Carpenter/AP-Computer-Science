@@ -31,3 +31,15 @@ public class UdemyComparison_26 {
 // x += 7 is the same as x = x + 7, can be done for +, -, *, /, %(remainder)
 // && means AND, || means OR
 // ! means NOT, will give the opposite (if a value will be true, it will give false)
+
+// Order of operations 
+// !, ++, --
+// *, /, %
+// +, -
+// >, >=, <, <=
+// ==, !=
+// &&
+// ||
+// =, +=, -=, *=, /=, %=
+// first and last evaluate right to left
+// rest are left to right
