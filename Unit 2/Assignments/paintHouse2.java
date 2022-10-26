@@ -17,12 +17,23 @@ import javax.swing.JPanel;
 // drawRect(start x, start y, width, height)
 // drawArc(start x, start y, end x, end y)
 
-public class paintHouse extends JPanel {
+public class paintHouse2 extends JPanel {
     private static final long serialVersionUID = 7148504528835036003L;
 
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+        g.setColor(Color.CYAN.brighter().brighter());
+        g.fillRect(-100, -100, 700, 700);
+
+        g.setColor(Color.GREEN.darker().darker());
+        g.fillOval(-300, 200, 1000, 300);
+
+        g.setColor(Color.WHITE.brighter());
+        g.fillOval(225, 50, 125, 30);
+        g.fillOval(270, 30, 65, 50);
+
         g.setColor(Color.LIGHT_GRAY);
         // g.fillOval(50, 50, 70, 50);
         g.fillRect(75, 75, 100, 150);
@@ -99,7 +110,7 @@ public class paintHouse extends JPanel {
 
     public static void main(String[] args) {
 
-        var panel = new paintHouse();
+        var panel = new paintHouse2();
 
         var frame = new JFrame("A simple graphics program");
         frame.setSize(400, 300);
