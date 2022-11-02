@@ -40,10 +40,10 @@ public class graphingLines extends JPanel {
 
         g.setColor(Color.RED);
 
-        int prevX = 250;
+        int prevX = 0;
         int prevY = 250;
 
-        for(x = 0; x <= 500; x += 5){
+        for(x = 0; x <= 500; x += 1){
             y = (int) (250-(x*x)/20);
             
 
