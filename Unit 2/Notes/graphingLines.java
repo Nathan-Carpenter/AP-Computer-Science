@@ -37,7 +37,9 @@ public class graphingLines extends JPanel {
             g.drawLine(0, y, 500, y);
         }
 
-
+        g.setColor(Color.BLACK);
+        g.drawLine(250, 0, 250, 500);
+        g.drawLine(0, 250, 500, 250);
         g.setColor(Color.RED);
 
         int prevX = 0;
@@ -60,9 +62,7 @@ public class graphingLines extends JPanel {
         }
 
         
-        g.setColor(Color.BLACK);
-        g.drawLine(250, 0, 250, 500);
-        g.drawLine(0, 250, 500, 250);
+
        
    
 

@@ -57,14 +57,11 @@ public class timesTable extends JPanel {
         numY = 1;
         g.setColor(Color.BLACK);
 
-        for(x = 25; x <= 500; x += 25){
-            for (y = 25; y <= 500; y += 25){
-
-
+        for(x = 25; x <= 475; x += 25){
+            for (y = 25; y <= 475; y += 25){
                 g.drawString(Integer.toString(numX * numY), x + 5, y + 20);
 
                 numY += 1;
-
             }
             numY = 1;
             numX += 1;
