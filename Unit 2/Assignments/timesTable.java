@@ -31,8 +31,8 @@ public class timesTable extends JPanel {
 
         g.setColor(Color.LIGHT_GRAY);
 
-        for (x = 0; x <= 500; x += 25){
-            g.drawLine(x,y,x,500);
+        for (x = 0; x <= 1000; x += 25){
+            g.drawLine(x,y,x,1000);
 
             g.setColor(Color.BLACK);
             g.drawString(Integer.toString(numX), x + 5, 20);
@@ -43,8 +43,8 @@ public class timesTable extends JPanel {
 
         }
 
-        for (y = 0; y <= 500; y += 25){
-            g.drawLine(0, y, 500, y);
+        for (y = 0; y <= 1000; y += 25){
+            g.drawLine(0, y, 1000, y);
 
             g.setColor(Color.BLACK);
             g.drawString(Integer.toString(numY), 5, y + 20);
@@ -57,8 +57,8 @@ public class timesTable extends JPanel {
         numY = 1;
         g.setColor(Color.BLACK);
 
-        for(x = 25; x <= 475; x += 25){
-            for (y = 25; y <= 475; y += 25){
+        for(x = 25; x <= 975; x += 25){
+            for (y = 25; y <= 975; y += 25){
                 g.drawString(Integer.toString(numX * numY), x + 5, y + 20);
 
                 numY += 1;
@@ -82,7 +82,7 @@ public class timesTable extends JPanel {
         var panel = new timesTable();
 
         var frame = new JFrame("Graph");
-        frame.setSize(500, 500);
+        frame.setSize(1000, 1000);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(panel, BorderLayout.CENTER);
         frame.setVisible(true);
