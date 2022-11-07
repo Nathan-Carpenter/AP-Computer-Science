@@ -9,7 +9,7 @@ import java.awt.Graphics;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.Timer;
+//import javax.swing.Timer;
 
 // Draw = outline
 // fill = filled in 

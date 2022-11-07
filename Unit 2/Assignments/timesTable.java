@@ -1,10 +1,10 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Point;
-import java.lang.reflect.Array;
+//import java.awt.Point;
+//import java.lang.reflect.Array;
 
-import javax.swing.SwingUtilities;
+//import javax.swing.SwingUtilities;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
