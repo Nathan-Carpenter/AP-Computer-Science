@@ -12,11 +12,12 @@ public class shapeMaker{
 
         // Ask for what shape they want, variable will be called later to tell which shape to initalize
         System.out.println("Would you like to create a square, rectangle, right triangle, or isosceles triangle? ");
+        System.out.println("You can also say 'exit' to close the program");
         String input = keyboard.nextLine();
 
         // while loop to make sure input is one of the acceptable values
-        while(!input.equals("square") && !input.equals("rectangle") && !input.equals("right triangle") && !input.equals("isosceles triangle")){
-            System.out.println("Please enter either square, rectangle, right triangle or isosceles triangle");
+        while(!input.equals("square") && !input.equals("rectangle") && !input.equals("right triangle") && !input.equals("isosceles triangle") && !input.equals("exit")){
+            System.out.println("Please enter either square, rectangle, right triangle or isosceles triangle (or exit)");
             input = keyboard.nextLine();
         }
 
@@ -122,6 +123,10 @@ public class shapeMaker{
 
                 System.out.println(" ");
             }
+        }
+
+        else if(input.equals("exit")){
+            System.exit(0);
         }
 
         // only here in case some error in initalizing shapes occurs
