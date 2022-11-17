@@ -1,3 +1,4 @@
+package pictureEditor;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -14,7 +15,7 @@ public class pictureEditor extends JPanel {
     public void paintComponent(Graphics g) {
         BufferedImage redHead = null;
         try{
-            redHead = ImageIO.read(new File("redHead.JPG"));
+            redHead = ImageIO.read(new File("Projects/pictureEditor/redHead.JPG"));
         }
         catch(IOException e){}
         g.drawImage(redHead, 600, 10, 510, 765, getBackground(), getFocusCycleRootAncestor());
