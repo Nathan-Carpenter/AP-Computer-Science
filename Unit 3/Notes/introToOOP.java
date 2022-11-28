@@ -1,6 +1,5 @@
-import java.util.Scanner;
-import javax.sound.sampled.SourceDataLine;
-import java.util.*;
+//import java.util.Scanner;
+//import java.util.*;
 
 
 class Computer{
@@ -17,13 +16,13 @@ class Computer{
     }
 
     public String toString(){
-        return processor + ", " + memory + " GB Memory, " + storage + "GB Storage,";
+        return processor + ", " + memory + " GB Memory, " + storage + "GB Storage";
     }
 
 }
 
 class pets{
-    private int number;
+    int number;
     private String type;
     private String size;
     private String color;
@@ -37,9 +36,27 @@ class pets{
     }
 
     public String toString(){
-        return "You have " + number + " " + type + ", " + size + " " + color + " in your home";
+        return "You have " + number + " " + size + ", " + color + " " + type + " in your home";
     }
 
+}
+
+class schedule{
+    private String period1;
+    private String period2;
+    String period3;
+    private String period4;
+
+    public schedule(String p1, String p2, String p3, String p4){
+        period1 = p1;
+        period2 = p2;
+        period3 = p3;
+        period4 = p4;
+    }
+
+    public String toString(){
+        return "Your schedule is " + period1 + ", " + period2 + ", " + period3 + ", " + period4;
+    }
 }
 
 public class introToOOP{
@@ -51,7 +68,11 @@ public class introToOOP{
 
         pets margaret = new pets(10, "Huskies", "big", "grey");
         System.out.println(margaret.toString());
+        System.out.println("Margaret has " + margaret.number + " pets");
 
+        schedule classes = new schedule("Algebra", "U.S. History", "Comp Sci", "Chemistry");
+        System.out.println(classes);
+        System.out.println("Your 3rd period class is " + classes.period3);
 
     }    
 }
