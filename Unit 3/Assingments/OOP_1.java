@@ -79,17 +79,15 @@ class shuffleCharacters{
             shuffled.add(word.charAt(x));
         }
 
-        Iterator itr = shuffled.iterator();
-  
-        Collections.shuffle(shuffled);
-  
-        itr = shuffled.iterator();
-  
-        while (itr.hasNext()) {
-            System.out.print(itr.next() + " ");
-        }
+        Collections.shuffle(shuffled);  
+        String shufFinal = shuffled.toString();
 
-        return " ";
+        shufFinal = shufFinal.replace("[", "");
+        shufFinal = shufFinal.replace("]", "");
+        shufFinal = shufFinal.replace(",", "");
+        shufFinal = shufFinal.replace(" ", "");
+
+        return shufFinal;
     }
 
 
@@ -127,6 +125,7 @@ public class OOP_1 {
         System.out.println(" ");
 
         // OBJECT #1
+        
         mathOne M1 = new mathOne(var);
         System.out.println(M1.toString());
         
