@@ -25,6 +25,7 @@ public class Function {
         nameLength len = new nameLength(name1);
         System.out.println(len);
         
+        keyboard.close();
     }
 }
 
