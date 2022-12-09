@@ -23,6 +23,8 @@ public class File2{
 
         nameLength len = new nameLength(name1);
         System.out.println(len);
+
+        keyboard.close();
         
     }
 }
