@@ -27,9 +27,15 @@ public class Fraction2 {
 
         System.out.println("The sum of your two fractions: ");
         one.add(two);
+        
+        System.out.println("The difference of your two fractions: ");
+        one.subtract(two);
 
         System.out.println("The product of your two fractions: ");
         one.multiply(two);
+
+        System.out.println("The quotient of your two fractions: ");
+        one.divide(two);
 
         keyboard.close();
     }
