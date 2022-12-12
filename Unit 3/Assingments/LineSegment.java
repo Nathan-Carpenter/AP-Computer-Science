@@ -1,19 +1,34 @@
 import java.lang.Math.*;
 
 public class LineSegment {
-    Point pointOne = new Point(5,3);
-    Point pointTwo = new Point(2,4);
+    private Point pointOne;
+    private Point pointTwo;
 
-    public int getSlope(Point other){
-        
-        int slopeY = pointOne.getY() - pointTwo.getY();
-        int slopeX = pointTwo.getX() - pointOne.getX();
-
-        return slopeY / slopeX;
+    public LineSegment(Point one, Point two){
+        pointOne = one;
+        pointTwo = two;
     }
 
-    public int getDistance(Point other){
-        int distance = Math.sqrt();
+
+    public String getSlope(){
+        
+        int slopeY = pointTwo.getY() - pointOne.getY();
+        int slopeX = pointTwo.getX() - pointOne.getX();
+
+        if (slopeX < 0){
+            slopeX *= -1;
+            slopeY *= -1;
+        }
+        return slopeY + "/" + slopeX;
+    }
+
+    public double getDistance(){
+        double distance = Math.sqrt(Math.pow(pointTwo.getX() - pointOne.getX(), 2) + Math.pow(pointTwo.getY() - pointOne.getY(), 2));
+        return distance;
+    }
+
+    public String toString(){
+        return "(" + pointOne.getX() + "," + pointOne.getY() + "),(" + pointTwo.getX() + "," + pointTwo.getY() + ")";
     }
     
 }
