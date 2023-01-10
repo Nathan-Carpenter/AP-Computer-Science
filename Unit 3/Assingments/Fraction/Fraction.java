@@ -1,3 +1,4 @@
+package Fraction;
 // Adds and multiplies fractions
 
 public class Fraction {

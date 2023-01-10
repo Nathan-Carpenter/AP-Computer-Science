@@ -1,3 +1,4 @@
+package Fraction;
 import java.util.*;
 
 public class Fraction2 {
@@ -27,7 +28,7 @@ public class Fraction2 {
 
         System.out.println("The sum of your two fractions: ");
         one.add(two);
-        
+
         System.out.println("The difference of your two fractions: ");
         one.subtract(two);
 

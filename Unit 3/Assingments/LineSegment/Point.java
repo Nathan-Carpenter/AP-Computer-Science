@@ -1,9 +1,8 @@
+package LineSegment;
 public class Point {
 
-    public static final int y_point = 0;
     private int x;
     private int y;
-    public int x_point;
 
     public Point(int x_point,int y_point){
         x = x_point;

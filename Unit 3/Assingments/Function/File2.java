@@ -1,3 +1,4 @@
+package Function;
 import java.util.*;
 
 // This program is build to call the function from Function.java
