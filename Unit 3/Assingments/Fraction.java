@@ -28,8 +28,11 @@ public class Fraction {
 		int newNum = num1 + num2;
 		int newDen = commonD;
 
+		
+
 		Fraction newFrac = new Fraction(newNum, newDen);
 		System.out.println(toString(newFrac));
+
 		return newFrac;
 	}
 
