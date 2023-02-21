@@ -1,0 +1,14 @@
+The player and opponent have a 3x3 grid on their side.
+The opponent will roll a 6-sided die and place it on one of the first columns of the grid.
+Players gain points for each of the die's corresponding numbers that they have on their grid.
+The player will do the same
+On the second turn, players can place their roll on the same column as the previous roll or they can place it on a new column.
+Every turn after this will be similar with both the opponent and player being able to stack dice on columns or choose a clear column to place the die.
+The player WINS when one of the grids is filled and IF their total number is higher than the opponents.
+If a player places 2 of the same die together the number that they add to will be doubled.
+For example, if a player has 2 dice on a column and each of them has a 2 value players will add those values which makes it 4 then multiply it by 2 which would make it 8.
+If a player places 3 of the same die together the number that they add to will be tripled.
+For example, if a player has 3 dice on a column and each of them has a 2 value players will add those values which makes it 6 then multiply it by 3 which would make it 18.
+Players can negate a die or dice on an opponent's side if the player gets the same number and places it on the column that parallels their opponent's column.
+For example, if an opponent rolls a 6 and places it then the player rolls a 6 and places it on the column paralleling where the opponent placed their 6 then the 6 on the opponent's side will disappear while the player will keep their 6.
+This will erase all of the corresponding numbers from the opponent's side. So, if the opponent has three 6's in one column and that player puts a 6 on its parallel the 6's will all be erased on the opponent's paralleled column.
