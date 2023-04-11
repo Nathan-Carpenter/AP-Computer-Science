@@ -6,6 +6,9 @@ public class MagicSquares {
         int[][] SquareTest = {{7,0,5},{2,4,6},{3,8,1}};
         SquareChecker(SquareTest);
      
+        System.out.println("4 x 4 Magic Square to test:");
+        int[][] SquareTest2 = {{8,11,14,1},{13,2,7,13},{3,16,9,6},{10,5,4,15}};
+        SquareChecker(SquareTest2);
         
     }
 
@@ -22,7 +25,13 @@ public class MagicSquares {
             for(int x = 0; x < Square[0].length; x++){
                 sum += Square[y][x];
 
-                System.out.print(Square[y][x] + " ");;
+                if (String.valueOf(Square[y][x]).length() == 1){
+                    System.out.print(Square[y][x] + "  ");
+                }
+                else{
+                    System.out.print(Square[y][x] + " ");
+                }
+
             }
             System.out.println(" = " + sum);
 
@@ -35,7 +44,7 @@ public class MagicSquares {
         }
 
         for(int i = 0; i < Square[0].length; i++){
-            System.out.print("| ");
+            System.out.print("|  ");
         }
         System.out.println("");
 
