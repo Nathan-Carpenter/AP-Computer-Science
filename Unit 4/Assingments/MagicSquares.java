@@ -51,7 +51,7 @@ public class MagicSquares {
         int diagonalOne = 0; // These are variables that the diagonals will be added to and then the sum will be checked against finder
         int diagonalTwo = 0;
    
-        for(int y = 0; y < Square[0].length; y++){ // Nested for loop that iterates through every position in the given square
+        for(int y = 0; y < Square[0].length; y++){ // Nested for loop that iterates through every row in the given square 
             sum = 0;
             for(int x = 0; x < Square[0].length; x++){
                 sum += Square[y][x]; // adds up the values at every position within a row
@@ -75,12 +75,12 @@ public class MagicSquares {
             diagonalTwo += Square[y][Square[0].length - y - 1]; // this goes down the right to left diagonal and gets the sum of it, storing as diagonalTwo
         }
 
-        for(int i = 0; i < Square[0].length; i++){
+        for(int i = 0; i < Square[0].length; i++){ // formatting to display the column sums
             System.out.print("|  ");
         }
         System.out.println("");
 
-        for(int x = 0; x < Square[0].length; x++){
+        for(int x = 0; x < Square[0].length; x++){ // Nested for loop that iterates through every column in the given square
             sum = 0;
             for(int y = 0; y < Square[0].length; y++){
                 sum += Square[y][x];
