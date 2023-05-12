@@ -23,7 +23,7 @@ public class MagicSquares {
         System.out.println(" . . .  (This may take a while)");
         SquareRandom(SquareSize); // Square random creates a random magic square of an int size that's inputted (SquareSize in this case)
 
-
+        k.close();
     }
 
 // SquareChecker checks an int[][] array and determines if it is a magic square, with text output to the console to indicate that
