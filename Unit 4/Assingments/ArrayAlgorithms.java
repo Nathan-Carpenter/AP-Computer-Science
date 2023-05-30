@@ -3,7 +3,7 @@ public class ArrayAlgorithms {
     public static void main(String[] args){
         int evens = 0;
         int prevNum = 0;
-        int max;
+        int max = 0;
 
         int[] numList = {1,2,3,4,5,6,7,8,9,10};
         
@@ -22,6 +22,8 @@ public class ArrayAlgorithms {
             }
             prevNum = numList[i];
         }
+        System.out.println(max);
+        System.out.println(evens);
         // Finds the max value in the array
         // This algorithm goes through each position of numList and checks if the value in the position is greater than the previous value
         // if it is, it changes the 'max' int to that value, and then updates the variable storing the previous value for the next run of the loop
