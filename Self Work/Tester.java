@@ -4,6 +4,15 @@
 
 public class Tester {
     public static void main(String[] args){
+<<<<<<< HEAD
+        String oldSeq = "00000111";
+        String segment = "11";
+
+        String newSeq = oldSeq.replaceFirst(segment, "");
+        System.out.println(newSeq);
+
+        System.out.print(Math.pow(5.0, 2));
+=======
         String str = "CCCCCCCCAATTT!";
         int currentLen = 0;
         int maxLen = 0;
@@ -29,6 +38,7 @@ public class Tester {
         System.out.println(streakChar + " " + maxLen);
         
 
+>>>>>>> a3b0baa3c984c5a8457adc5d3e5c11cb56c1529a
 
 
     }
