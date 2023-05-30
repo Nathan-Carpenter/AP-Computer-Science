@@ -35,15 +35,11 @@ public class ArrayListProject {
             TimeDelay(200);
             ListPrint(list, wallet);
             TimeDelay(200);
-            textDelay("Would you like to buy or sell?", true);
-            String bs = k.nextLine();
-            if(bs.equalsIgnoreCase("buy")){
+            textDelay("Please print 'buy/sell item' ", true);
+            String buyOrSell = k.next();
+            String selection = k.next();
+            if(buyOrSell.equalsIgnoreCase("buy")){
                 System.out.println(" ");
-                textDelay("What item do you want to purchase?", true);
-                System.out.println(" ");
-                String selection = k.nextLine();
-                System.out.println(" ");
-    
                 int find = 0;
                 for(int i = 0; i < store.size(); i++){
                     if(store.size() == 0){
@@ -80,11 +76,7 @@ public class ArrayListProject {
                     textDelay("That item isn't in the store", true);
                 }
             }
-            else if(bs.equalsIgnoreCase("sell")){
-                System.out.println(" ");
-                textDelay("What item do you want to sell?", true);
-                System.out.println(" ");
-                String selection = k.nextLine();
+            else if(buyOrSell.equalsIgnoreCase("sell")){
                 System.out.println(" ");
                 int find = 0;
                 
@@ -113,7 +105,7 @@ public class ArrayListProject {
                     textDelay("You don't have that item", true);
                 }
             }
-            else if(bs.equalsIgnoreCase("none")){
+            else if(buyOrSell.equalsIgnoreCase("none")){
                 finalWallet = wallet;
                 wallet = 0;
                 System.out.println("\033[H\033[2J");
